@@ -1,5 +1,5 @@
 import React from 'react';
-import UserStore from './src/store/UserStore';
+import UserStore from './src/stores/UserStore';
 import Navigation from './src/navigation/Navigation';
 
 const App = () => {

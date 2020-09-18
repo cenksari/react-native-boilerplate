@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { NetInfo } from '@react-native-community/netinfo';
 
 import Database from '../tools/Database';
 
@@ -26,17 +25,17 @@ const UserStore = ({ children }) => {
   }, []);
 
   // Get connection status
-  useEffect(() => {
-    const unsubscribe = NetInfo.addEventListener((state) => {
-      if (componentIsMounted.current) {
-        setIsOnline(state.isConnected);
-      }
-    });
+  // useEffect(() => {
+  //   const unsubscribe = NetInfo.addEventListener((state) => {
+  //     if (componentIsMounted.current) {
+  //       setIsOnline(state.isConnected);
+  //     }
+  //   });
 
-    return () => {
-      unsubscribe();
-    };
-  }, []);
+  //   return () => {
+  //     unsubscribe();
+  //   };
+  // }, []);
 
   // Get signed in user from database
   useEffect(() => {
