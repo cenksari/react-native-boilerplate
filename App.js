@@ -1,14 +1,11 @@
 import React from 'react';
 import UserStore from './src/store/UserStore';
-
-import { View, Text } from 'react-native';
+import Navigation from './src/navigation/Navigation';
 
 const App = () => {
   return (
     <UserStore>
-      <View>
-        <Text>Hello world!</Text>
-      </View>
+      <Navigation />
     </UserStore>
   );
 };
