@@ -1,20 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
+import { AppStyles } from '../../styles/Styles';
 
 const MainScreen = () => {
   return (
-    <View style={styles.mainScreen}>
+    <View style={AppStyles.appContainer}>
       <Text>Hello world!</Text>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  mainScreen: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default MainScreen;
