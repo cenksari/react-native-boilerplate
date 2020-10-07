@@ -1,12 +1,12 @@
 import React from 'react';
-import UserStore from './src/stores/UserStore';
+import MemberProvider from './src/contexts/MemberContext';
 import Navigation from './src/navigation/Navigation';
 
 const App = () => {
   return (
-    <UserStore>
+    <MemberProvider>
       <Navigation />
-    </UserStore>
+    </MemberProvider>
   );
 };
 
