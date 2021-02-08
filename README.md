@@ -12,4 +12,11 @@
 8. **RUN** `yarn install` or `npm install` command
 9. **RUN** `npx react-native run-android` command for running project inside your simulator.
 
+#### For iOS
+
+1. **RUN** `yarn install` or `npm install` command
+2. **RUN** `cd ios` command
+3. **RUN** `pod install` command
+4. **RUN** `npx react-native run-ios` command for running project inside your simulator.
+
 That's it. Thank you for downloading and using my boilerplate.
