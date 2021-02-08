@@ -103,6 +103,8 @@ const humanReadableDuration = (milliseconds) => {
   seconds = Math.floor(seconds % 60);
   seconds = seconds >= 10 ? seconds : `0${seconds}`;
 
+  minutes = minutes >= 10 ? minutes : `0${minutes}`;
+
   if (hours !== '') {
     return `${hours}:${minutes}:${seconds}`;
   }

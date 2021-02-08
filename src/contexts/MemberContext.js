@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import Database from '../tools/Database';
 
@@ -33,5 +34,9 @@ const MemberProvider = ({ children }) => {
 
 export const MemberContext = React.createContext(initialMemberState);
 export const LanguageContext = React.createContext(initialLanguageState);
+
+MemberProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default MemberProvider;

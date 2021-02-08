@@ -1,11 +1,10 @@
 import React from 'react';
 import { View, Text, StatusBar, Alert } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import PropTypes from 'prop-types';
 
 import { HeaderStyles } from '../../styles/Styles';
-
-import PropTypes from 'prop-types';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const Header = React.memo(({ title, statusBarBackgroundColor }) => {
   const cutTitle = (name, trim) => {
@@ -53,4 +52,4 @@ Header.propTypes = {
   statusBarBackgroundColor: PropTypes.string.isRequired,
 };
 
-export { Header };
+export default Header;

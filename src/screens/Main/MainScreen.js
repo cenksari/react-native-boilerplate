@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 
 import { AppStyles } from '../../styles/Styles';
 
-import { Header } from '../../components/Header/Header';
+import Header from '../../components/Header/Header';
 
 const MainScreen = () => {
   return (
