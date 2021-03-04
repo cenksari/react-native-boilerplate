@@ -10,7 +10,7 @@ const MainScreen = () => {
     <React.Fragment>
       <Header title='Main screen' statusBarBackgroundColor='#147efb' />
       <View style={AppStyles.appContainer}>
-        <Text>React native boilerplate</Text>
+        <Text style={AppStyles.defaultText}>React native boilerplate</Text>
       </View>
     </React.Fragment>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StatusBar, Alert } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import PropTypes from 'prop-types';
 
 import { HeaderStyles } from '../../styles/Styles';
@@ -18,28 +18,28 @@ const Header = React.memo(({ title, statusBarBackgroundColor }) => {
   return (
     <React.Fragment>
       <StatusBar
+        translucent={false}
         barStyle='light-content'
         backgroundColor={statusBarBackgroundColor}
-        translucent={false}
       />
       <View style={HeaderStyles.container}>
-        <View>
+        <View style={HeaderStyles.left}>
           <TouchableOpacity
             activeOpacity={0.9}
             onPress={() => Alert.alert('Information', 'Back button pressed')}
           >
-            <Icon name='keyboard-arrow-left' style={HeaderStyles.leftIcon} />
+            <Icon name='chevron-back-outline' style={HeaderStyles.leftIcon} />
           </TouchableOpacity>
         </View>
-        <View>
+        <View style={HeaderStyles.center}>
           <Text style={HeaderStyles.centerText}>{cutTitle(title, 25)}</Text>
         </View>
-        <View>
+        <View style={HeaderStyles.right}>
           <TouchableOpacity
             activeOpacity={0.9}
             onPress={() => Alert.alert('Information', 'Close button pressed')}
           >
-            <Icon name='close' style={HeaderStyles.rightIcon} />
+            <Icon name='close-outline' style={HeaderStyles.rightIcon} />
           </TouchableOpacity>
         </View>
       </View>

@@ -7,32 +7,43 @@ export const AppStyles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#ffffff',
   },
+  defaultText: {
+    fontSize: 16,
+  },
 });
 
 export const HeaderStyles = StyleSheet.create({
   container: {
     height: Platform.OS === 'ios' ? 90 : 50,
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'space-between',
     backgroundColor: '#147efb',
-    borderBottomWidth: 0.5,
-    borderBottomColor: '#dadada',
+    paddingBottom: 10,
+  },
+  left: {
+    paddingLeft: 10,
+    alignItems: 'flex-start',
   },
   leftIcon: {
-    fontSize: 30,
+    fontSize: 26,
     color: '#ffffff',
-    marginLeft: 15,
+  },
+  center: {
+    paddingBottom: 7,
   },
   centerText: {
     fontSize: 18,
     color: '#ffffff',
     textAlign: 'center',
-    fontWeight: 'bold',
+    fontWeight: Platform.OS === 'ios' ? '500' : 'bold',
+  },
+  right: {
+    paddingRight: 10,
+    alignItems: 'flex-end',
   },
   rightIcon: {
     fontSize: 32,
     color: '#ffffff',
-    marginRight: 15,
   },
 });
